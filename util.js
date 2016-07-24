@@ -16,6 +16,7 @@ Util.prototype.getOneItem = function (id) {
 
     return items[id];
 };
+
 /**
  * get tag item from rssXml
  * @return object

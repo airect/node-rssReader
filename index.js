@@ -2,7 +2,7 @@
  * main
  *
  */
-var RSSParser = require('./RSSparser.js');
+var RSSParser = require('./RSSParser.js');
 var http = require('http');
 var url  = require('url');
 var Util = require('./util.js');
@@ -16,15 +16,15 @@ var server = http.createServer(function (req, res) {
 	if (param['source']) {
 		RSSParser(param['source'], function (err, rssJson) {
 			if (err) return res.end('error');
-			//var items = rssJson.rss.channel;
+
 			var titles = '';
 			var util = new Util(rssJson);
 			var items = util.getItems();
-			//res.end(JSON.stringify(items));
-			console.log(items);
+
 			items.forEach(function (item) {
 				titles += "<a target='_blank' href='" + item.link + "'>" + item.title + "</a>" + "(" + item.pubDate + ")" + '<br>'
 			});
+
 			res.writeHead(200, {
 				'Content-Type': 'text/html'
 			});
