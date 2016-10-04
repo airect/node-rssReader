@@ -1,0 +1,49 @@
+/***
+文章内页css
+***/
+.container {
+    padding: 0 6%;
+}
+.title {
+    margin: 20px 0 0;
+}
+section.sub {
+    margin: 10px 10% 6px;
+    font-size: 12px;
+}
+section.sub .author {
+    color: #004986;
+
+}
+section.sub time {
+    margin-left: 30%;
+}
+.article {
+    font: 16px/1.2 "幼圆","微软雅黑";
+}
+/* toolbar */
+.bottom-toolbar {
+    width: 100%;
+    height: 56px;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 4px 10% 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 -6px 12px 1px  #cccccc;
+}
+.bottom-toolbar .tool {
+    width: 42px;
+    height: 42px;
+    background-size: cover;
+    margin-right: 28px;
+    float: left;
+}
+.tool.collection {
+    background-image: url('../public/images/collection.png');
+}
+.tool.share {
+    background-image: url('../public/images/share.png');
+}

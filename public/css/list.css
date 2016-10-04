@@ -1,0 +1,68 @@
+/*****
+ 列表css
+*****/
+.searcher {
+    width: 100%;
+    padding: 10px 12% 0;
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.searcher input {
+    border: none;
+    width: 79%;
+    display: block;
+    height: 30px;
+    position: absolute;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+.searcher input:focus, .searcher input:visited {
+    outline: none;
+    border-bottom-color: #ccc;
+}
+.searcher .search-btn {
+    height: 30px;
+    position: absolute;
+    left: 87%;
+}
+
+.list-container {
+
+}
+.list-container .list {
+    padding: 0;
+}
+.list-container .list li {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px #c0c0c0;
+    padding-left: 12%;
+    margin-top: 12px;
+}
+.list-container h3 {
+    font: 14px/1 "微软雅黑";
+    font-weight: 600;
+}
+.list-container p {
+    font: 12px/1 "微软雅黑";
+    width: 60%;
+    height: 36px;
+    margin: 6px 0 10px;
+}
+.list-container .list li .date {
+    position: absolute;
+    right: 16%;
+    top: 20px;
+    font-size: 13px;
+}
+.right-director {
+    width: 21px;
+    height: 35px;
+    position: absolute;
+    top: 13px;
+    right: 6%;
+    background: url('../../public/images/right-nav.png') no-repeat;
+    background-size: cover;
+}
